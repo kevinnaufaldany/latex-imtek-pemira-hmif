@@ -19,7 +19,8 @@
 \usepackage[all]{xy}
 \usepackage{tikz}
 \usepackage{verbatim}
-\usepackage[left=2cm,right=2cm,top=3cm,bottom=2.5cm]{geometry}
+% \usepackage[left=2cm,right=2cm,top=3cm,bottom=2.5cm]{geometry}
+\usepackage[left=2cm,right=2cm,top=5cm,bottom=3cm,headheight=100pt,headsep=1cm,footskip=1.5cm]{geometry}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -87,10 +88,41 @@
 \usepackage{lipsum}%% a garbage package you don't need except to create examples.
 \usepackage{fancyhdr}
 \usepackage[ddmmyyyy]{datetime}
+\usepackage{array}
+
 \pagestyle{fancy}
-\lhead{Imtek Pemira HMIF} % ini untuk nama penulis
-\rhead{ \thepage}
-\cfoot{\textbf{Manual Book}} % ini untuk judul tugas
+\fancyhf{} % clear semua
+
+% ====================================
+% HEADER FIX — Dibungkus parbox
+% ====================================
+\fancyhead[C]{
+\parbox{\textwidth}{
+\centering
+\begin{tabular}{m{2.2cm} m{10.8cm} m{2.7cm}}
+\includegraphics[width=2.2cm]{Figure/ITERA.png} &
+
+\parbox[c]{10.8cm}{
+    \centering
+    {\large \textbf{HIMPUNAN MAHASISWA INFORMATIKA (HMIF)}}\\
+    {\large \textbf{FAKULTAS TEKNOLOGI INDUSTRI}}\\
+    {\large \textbf{INSTITUT TEKNOLOGI SUMATERA}}\\
+    \footnotesize \textit{Jl. Terusan Ryacudu, Way Huwi, Jati Agung, Lampung Selatan 35365}\\
+    \footnotesize \textit{e-mail: \href{mailto:hmifitera1@gmail.com}{hmifitera1@gmail.com}}
+}
+&
+
+\includegraphics[width=2.7cm]{Figure/HMIF.png}
+\end{tabular}
+
+% garis bawah header
+\vspace{0.1cm}
+\noindent\rule{\textwidth}{0.4pt}
+}}
+
+% \fancyfoot[L]{\textbf{Manual Book}}
+\fancyfoot[L]{\textbf{Manual Book by Imtek Pemira HMIF 2025 \hfill \thepage}}
+
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -107,6 +139,7 @@
 \cftsetindents{section}{0em}{2.3em}
 \cftsetindents{subsection}{2.3em}{3em}
 
+
 %%%%%%%%%%%%%%  Shortcut for usual set of numbers  %%%%%%%%%%%
 
 \newcommand{\N}{\mathbb{N}}
@@ -114,7 +147,7 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
-\setlength\headheight{14pt}
+% \setlength\headheight{14pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
@@ -123,32 +156,20 @@
 % Gunakan penomoran romawi untuk cover dan daftar isi
 \pagenumbering{roman}
 \thispagestyle{empty}
-\vspace*{-2.5cm}
-\begin{center}
-\begin{tabular}{ m{2.7cm}  m{12.5cm}  m{1cm} }
-    % Logo Kiri
-    \includegraphics[width=2.5cm]{Figure/HMIF.png} &
-    
-    % Teks Tengah
-    \begin{center}
-        {\Large \textbf{HIMPUNAN MAHASISWA INFORMATIKA (HMIF)}}\\ 
-        {\Large \textbf{KABINET AKSELERASI}}\\ 
-        {\Large \textbf{PERIODE 2025}} \\
-        {\Large \textbf{PEMIRA HMIF}} \\
-    \end{center} &
-\end{tabular}
-\end{center}
-\vspace{-0.5cm}
-\noindent\rule{\textwidth}{0.4pt}
 
-% saya ingin disini ada tulisan cover page mengenai pemira hmif 2025 manual book by imtek pemira hmif 2025 gitu2
-\vspace{7.2cm}
+% ===== COVER PAGE =====
 \begin{center}
-    {\Huge \textbf{MANUAL BOOK}} \\[0.5cm]
-    {\LARGE \textbf{PEMIRA HMIF 2025}} \\[1.5cm]
+    \vspace*{-1cm}
+    {\Huge \textbf{MANUAL BOOK}} \\[2cm]
     
-    {\large Disusun oleh:} \\[0.3cm]
-    {\Large \textbf{IMTEK PEMIRA HMIF 2025}} \\[3cm]
+    % Logo HMIF di tengah
+    \includegraphics[width=10cm]{Figure/HMIF.png} \\[2cm]
+    
+    {\Large Disusun oleh:} \\[0.5cm]
+    {\LARGE \textbf{DIVISI IMTEK}} \\[1.5cm]
+    
+    {\LARGE \textbf{PEMIRA HMIF}} \\[0.5cm]
+    {\LARGE \textbf{2025}}
 \end{center}
 
 
@@ -156,6 +177,7 @@
 %  DAFTAR ISI
 % ==========================
 \newpage
+\vspace*{-2.5cm}
 \renewcommand{\contentsname}{DAFTAR ISI}
 \tableofcontents
 \clearpage
@@ -196,19 +218,6 @@
         "traffic sign", "vegetation", "terrain", "sky", "person", "rider", "car", "truck", 
         "bus", "train", "motorcycle", "bicycle", "road lines", "other", "road works"
     ]
-    
-    def __init__(self, path="../SYNTHIA-SF", classes=None, augmentation=None, preprocessing=None, valid=False):
-        self.rootdir = Path(path)
-        self.data_imgs, self.data_gts = self.prepare_data(valid,path)
-        self.valid = valid
-
-    
-        if classes == None:
-            classes = self.CLASSES 
-        self.class_values = [self.CLASSES.index(cls.lower()) for cls in classes]
-        
-        self.augmentation = augmentation
-        self.preprocessing = preprocessing
     \end{lstlisting}
 
 \section{Memuat Multi-Gambar}

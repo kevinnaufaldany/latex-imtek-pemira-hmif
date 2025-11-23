@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1763912779.70934 "d:/Abckup_desktop/Semester7/imtek_hmif/main.tex" "main.pdf" "main" 1763912781.7879 0
+["pdflatex"] 1763920919.36133 "d:/Abckup_desktop/Semester7/imtek_hmif/main.tex" "main.pdf" "main" 1763920921.68865 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -228,14 +228,15 @@
   "C:/Users/ASUS/AppData/Roaming/MiKTeX/tex/latex/tocloft/tocloft.sty" 1578908763 37263 3e78d14f0f4b1a30560fea5e04de805d ""
   "C:/Users/ASUS/AppData/Roaming/MiKTeX/tex/latex/upquote/upquote.sty" 1335534756 1088 517e01cde97c1c0baf72e69d43aa5a2e ""
   "Figure/HMIF.png" 1713660579 243039 94bb05ab43ee86aaf12aee12b49c91ca ""
+  "Figure/ITERA.png" 1763915605 587727 025da3d62236850542147de2074059b1 ""
   "Figure/aug1.png" 1763905577 415190 945f0432121199bba76c929ea451861b ""
   "Figure/aug2.png" 1763905577 340421 d4f00673e851930c4b72f53d46a20d79 ""
   "Figure/ioutrain.png" 1763905577 125713 d785ef75b0157bfbae5f154ee8051161 ""
-  "d:/Abckup_desktop/Semester7/imtek_hmif/main.tex" 1763912779 12513 4c93e46e2848e9afd02244175ad96415 ""
-  "main.aux" 1763912781 2280 f87570d9abf37761481434ee554e6c28 "pdflatex"
-  "main.out" 1763912781 1140 3a637e8b3209e9f7e3a3cccc02974af5 "pdflatex"
-  "main.tex" 1763912779 12513 4c93e46e2848e9afd02244175ad96415 ""
-  "main.toc" 1763912781 621 2dceeca28b02002defdbd5346487d8fb "pdflatex"
+  "d:/Abckup_desktop/Semester7/imtek_hmif/main.tex" 1763920918 12510 d11da044eb5627d2fe82784ae8e8ba40 ""
+  "main.aux" 1763920921 2280 f87570d9abf37761481434ee554e6c28 "pdflatex"
+  "main.out" 1763920921 1140 3a637e8b3209e9f7e3a3cccc02974af5 "pdflatex"
+  "main.tex" 1763920918 12510 d11da044eb5627d2fe82784ae8e8ba40 ""
+  "main.toc" 1763920921 621 2dceeca28b02002defdbd5346487d8fb "pdflatex"
   (generated)
   "main.aux"
   "main.log"
