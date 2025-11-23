@@ -4,4 +4,4 @@ Versi Overleaf dapat dilihat pada tautan [blom]()
 
 Dibuat untuk dipergunakan oleh Pemira HMIF 2025.
 
-Template dibuat berdasarkan template [LaTeX Template IF ITERA] (https://github.com/informatika-itera/LaTeXIFITERA) oleh Sivitas Akademik ITERA, khususnya Program Studi Teknik Informatika ITERA.
+Template dibuat berdasarkan template [LaTeX Template IF ITERA](https://github.com/informatika-itera/LaTeXIFITERA) oleh Sivitas Akademik ITERA, khususnya Program Studi Teknik Informatika ITERA.
