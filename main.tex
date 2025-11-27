@@ -68,6 +68,41 @@
 \lstset{style=mystyle}
 \renewcommand{\lstlistingname}{Kode}
 %%%%%%%%%%%%%%%%%%%%%%%%% PACKAGE ends HERE %%%%%%%%%%%%%%%%%%%%%%%%
+%===========================
+% Custom counter for Pasal
+%===========================
+\newcounter{pasal}
+
+% Command Pasal otomatis dengan argumen judul
+\newcommand{\pasal}[1]{%
+    \stepcounter{pasal}%
+    \addcontentsline{toc}{section}{Pasal \thepasal}
+    \vspace{0.5em}
+    \begin{center}
+    \Large \textbf{Pasal \thepasal}\\
+    \vspace{0.2em}
+    \textbf{#1}
+    \end{center}
+    \vspace{0.2em}
+}
+
+\newcounter{subbagian}[pasal]
+\renewcommand{\thesubbagian}{\alph{subbagian}}
+
+\newcommand{\subbagian}{%
+    \stepcounter{subbagian}%
+    \textbf{\thesubbagian.\ }%
+}
+
+% Mengurangi jarak besar sebelum/after section
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.5em}{0.3em}
+
+% Mengurangi jarak antar item enumerate
+\usepackage{enumitem}
+\setlist{nosep, leftmargin=1.2cm}
+
+\usepackage{ulem}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Data Diri %%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,6 +124,7 @@
 \usepackage{fancyhdr}
 \usepackage[ddmmyyyy]{datetime}
 \usepackage{array}
+\usepackage[bahasa]{babel}
 
 \pagestyle{fancy}
 \fancyhf{} % clear semua
@@ -120,8 +156,15 @@
 \noindent\rule{\textwidth}{0.4pt}
 }}
 
+% untuk ganti nama dokumen
+\newcommand{\dokumen}{SOP PESERTA }
+\newcommand{\dokumenkecil}{SOP Peserta }
+\newcommand{\pemilu}{PEMILU }
+\newcommand{\pemilukecil}{Pemilu }
+
+
 % \fancyfoot[L]{\textbf{Manual Book}}
-\fancyfoot[L]{\textbf{Manual Book by Imtek Pemira HMIF 2025 \hfill \thepage}}
+\fancyfoot[L]{\textbf{\dokumenkecil by Imtek \pemilukecil HMIF 2025 \hfill \thepage}}
 
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -160,7 +203,7 @@
 % ===== COVER PAGE =====
 \begin{center}
     \vspace*{-1cm}
-    {\Huge \textbf{MANUAL BOOK}} \\[2cm]
+    {\Huge \textbf{SOP PESERTA}} \\[2cm]
     
     % Logo HMIF di tengah
     \includegraphics[width=10cm]{Figure/HMIF.png} \\[2cm]
@@ -168,7 +211,7 @@
     {\Large Disusun oleh:} \\[0.5cm]
     {\LARGE \textbf{DIVISI IMTEK}} \\[1.5cm]
     
-    {\LARGE \textbf{PEMIRA HMIF}} \\[0.5cm]
+    {\LARGE \textbf{\pemilu HMIF}} \\[0.5cm]
     {\LARGE \textbf{2025}}
 \end{center}
 
@@ -177,111 +220,70 @@
 %  DAFTAR ISI
 % ==========================
 \newpage
-\vspace*{-2.5cm}
-\renewcommand{\contentsname}{DAFTAR ISI}
-\tableofcontents
-\clearpage
+% \vspace*{-2.5cm}
+% \renewcommand{\contentsname}{DAFTAR ISI}
+% \tableofcontents
+% \clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BODY DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mulai penomoran halaman arabic dari sini
 \pagenumbering{arabic}
 \pagestyle{fancy}
+%========= Pasal 1 ==========
+\pasal{Tata Tertib}
 
-\section{Header Pertama}
-    Untuk menggunakan header, anda cukup membuat $\backslash${\tt{section}} pada bagian script anda. Penomoran pada header akan otomatis dibuat. Jika anda membutuhkan line break, anda dapat membubuhkan dua garis miring dengan backslash seperti berikut $\backslash\backslash$
+\begin{enumerate}
+    \item Hadhirin wajib mengenakan pakaian yang rapi dan sopan, serta tidak diperbolehkan mengenakan celana pendek ataupun celana yang memiliki model sobek-sobek \textit{(ripped jeans)} selama acara berlangsung.
+    \item Dilarang mengucapkan kata-kata kasar atau melakukan tindakan yang dapat mengganggu kenyamanan hadirin lainnya dalam forum.
+    \item Hadhirin tidak diperbolehkan membuat kegaduhan dan wajib mengondisikan alat komunikasi (gawai) dalam mode diam \textit{(silent)} selama kegiatan berlangsung.
+    \item Pengambilan dokumentasi selama kegiatan diperbolehkan selama tidak mengganggu pandangan hadirin lain dan jalannya acara.
+\end{enumerate}
 
-\section{Cara Mencantumkan Link}
-    Anda dapat memulai belajar menulis di \LaTeX dengan menulis tugas atau laporan yang sesungguhnya. Pada awalnya mungkin terasa sulit. Namun jika anda dengan tekun tetap berlatih, justru menulis di LaTeX akan membuat anda terbiasa dan malah lebih menyenangkan ketimbang menulis di Microsoft Word.\\
-    Jika anda ingin mencantumkan link di \LaTeX anda dapat melakukannya dengan perintah $\backslash${\tt{href}}, misalnya pada tautan berikut ini \href{http://aldi_tob_2000.staff.gunadarma.ac.id/Downloads/files/17359/Membuat+dokumen+dengan+latex.pdf}{(Sumber: PDF Tutorial Belajar Latex)}.
-    
-\subsection{Sub Header atau Sub Chapter}
-     Untuk menggunakan subheader, anda cukup membuat $\backslash${\tt{subsection}} atau bahkan  $\backslash${\tt{subsubsection}} untuk sub-sub bab. Lalu bagaimana untuk membuat subheader atau bahkan header namun tanpa penomoran? Cek keterangan di bawah ini.
+%========= Pasal 2 ==========
+\pasal{Hak dan Kewajiban}
 
-\subsection*{Header Tanpa Penomoran}
-     Untuk menggunakan subheader tanpa penomoran, anda cukup membuat $\backslash${\tt{subsection*}} atau bahkan  $\backslash${\tt{subsubsection*}} maupun $\backslash${\tt{section*}}.
-    
-\subsection{Bold, Italic, Plaintext}
-\begin{itemize}
-    \item Anda dapat membuat cetak tebal dengan perintah $\backslash${\tt{textbf}} seperti \textbf{berikut ini}.
-    \item Anda dapat membuat cetak miring dengan perintah $\backslash${\tt{textit}} seperti \textit{berikut ini}. \item Untuk menggaris bawahi, tinggal ketikkan perintah $\backslash${\tt{underline}} seperti \underline{berikut ini}.
-    \item Untuk membuat list seperti tulisan ini, gunakan perintah $\backslash${\tt{item}} diantara
-\end{itemize}
+\subbagian \textbf{Kewajiban Hadhirin}
+\begin{enumerate}[label=\arabic*., labelindent=0.75cm, leftmargin=!, itemindent=0pt]
+    \item Hadhirin berhak mendapatkan informasi yang jelas dan akurat dari narasumber mengenai topik yang dibahas dalam sarasehan.
+    \item Hadhirin berhak mengajukan pertanyaan atau tanggapan terkait topik yang dibahas dalam sarasehan.
+\end{enumerate}
 
-\subsection{Code Snippets}
-    Berikut ini adalah contoh dari penggunaan $\backslash${\tt{begin{lstlisting}}} untuk menulis potongan kode. Dalam kasus ini saya menggunakan bahasa Python. Jika anda menggunakan C atau yang lainnya, tinggal sesuaikan di bagian parameter dari $\backslash${\tt{begin{lstlisting}}}. Anda dapat melihatnya pada code snipptes \ref{labelkode}
-    
-    \begin{lstlisting}[language=Python, caption=Captionnya tulis di sini class,label={labelkode}]
-    class SynthiaDataset(Dataset):
+\textbf{b. Kewajiban Hadhirin}
+\begin{enumerate}[label=\arabic*., labelindent=0.75cm, leftmargin=!, itemindent=0pt]
+    \item Hadhirin berhak mendapatkan informasi yang jelas dan akurat dari narasumber mengenai topik yang dibahas dalam sarasehan.
+    \item Hadhirin berhak mengajukan pertanyaan atau tanggapan terkait topik yang dibahas dalam sarasehan.
+\end{enumerate}
 
-    CLASSES = [
-        "void", "road", "sidewalk", "building", "wall", "fence", "pole", "traffic light", 
-        "traffic sign", "vegetation", "terrain", "sky", "person", "rider", "car", "truck", 
-        "bus", "train", "motorcycle", "bicycle", "road lines", "other", "road works"
-    ]
-    \end{lstlisting}
+%========= Pasal 1 ==========
+\pasal{Tata}
 
-\section{Memuat Multi-Gambar}
-Berikut ini adalah contoh cara untuk memuat multi-gambar.
+\begin{enumerate}
+    \item Hadhirin wajib mengenakan pakaian yang rapi dan sopan, serta tidak diperbolehkan mengenakan celana pendek ataupun celana yang memiliki model sobek-sobek \textit{(ripped jeans)} selama acara berlangsung.
+    \item Dilarang mengucapkan kata-kata kasar atau melakukan tindakan yang dapat mengganggu kenyamanan hadirin lainnya dalam forum.
+    \item Hadhirin tidak diperbolehkan membuat kegaduhan dan wajib mengondisikan alat komunikasi (gawai) dalam mode diam \textit{(silent)} selama kegiatan berlangsung.
+    \item Pengambilan dokumentasi selama kegiatan diperbolehkan selama tidak mengganggu pandangan hadirin lain dan jalannya acara.
+    \item Dilarang mengucapkan kata-kata kasar atau melakukan tindakan yang dapat mengganggu kenyamanan hadirin lainnya dalam forum.
+    \item Hadhirin tidak diperbolehkan membuat kegaduhan dan wajib mengondisikan alat komunikasi (gawai) dalam mode diam \textit{(silent)} selama kegiatan berlangsung.
+    \item Pengambilan dokumentasi selama kegiatan diperbolehkan selama tidak mengganggu pandangan hadirin lain dan jalannya acara.
+\end{enumerate}
 
-\begin{figure}[h]
-	\centering
-	\begin{subfigure}[b]{0.4\textwidth}
-		\centering
-		\def\svgwidth{\columnwidth}
-		\includegraphics[width=1\textwidth]{Figure/aug1.png}
-		\caption{Augment Result 1}
-		\label{fig:aug-1}
-	\end{subfigure}
-	\qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-	%(or a blank line to force the subfigure onto a new line)
-	\begin{subfigure}[b]{0.4\textwidth}
-		\centering
-		\def\svgwidth{\columnwidth}
-		\includegraphics[width=1\textwidth]{Figure/aug2.png}
-		\caption{Augment Result 2}
-		\label{fig:aug-2}
-	\end{subfigure}
-	\caption{Augmentation Samples}\label{fig:aug}
-\end{figure}
+%========= Pasal 1 ==========
+\pasal{Tertib}
 
+\begin{enumerate}
+    \item Hadhirin wajib mengenakan pakaian yang rapi dan sopan, serta tidak diperbolehkan mengenakan celana pendek ataupun celana yang memiliki model sobek-sobek \textit{(ripped jeans)} selama acara berlangsung.
+    \item Dilarang mengucapkan kata-kata kasar atau melakukan tindakan yang dapat mengganggu kenyamanan hadirin lainnya dalam forum.
+    \item Hadhirin tidak diperbolehkan membuat kegaduhan dan wajib mengondisikan alat komunikasi (gawai) dalam mode diam \textit{(silent)} selama kegiatan berlangsung.
+    \item Pengambilan dokumentasi selama kegiatan diperbolehkan selama tidak mengganggu pandangan hadirin lain dan jalannya acara.
+\end{enumerate}
 
-\newpage
-\section{Memuat Gambar}
-Jika anda tidak ingin memuat multi-gambar, alias satu caption hanya berisi satu gambar. Silahkan tiru cara berikut. Apabila anda merasa gambar anda tidak sesuai pada tempatnya, pelajari cara penempatan gambar pada \href{https://www.overleaf.com/learn/latex/Positioning_of_Figures}{tautan berikut ini}.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Figure/ioutrain.png}
-    \caption{Ini Captionnya}
-    \label{fig:my_label}
-\end{figure}
+\vspace{1cm}
+\begin{flushright}
+Lampung Selatan, \today\\
+Kepala Divisi Imtek\\[0.2cm]
+\includegraphics[width=3cm]{Figure/ttd_kevin.png}\\[0.2cm]
+\uline{\textbf{Kevin Naufal Dany}}\\
+NIM. 122140222
+\end{flushright}
 
-\section{Memuat Tabel}
-Bagian ini adalah bagian yang menurut saya cukup sulit. Namun anda dapat menggunakan bantuan dari table designer yang ada di internet, misalnya \href{https://www.tablesgenerator.com}{TablesGenerator} atau \href{https://www.latex-tables.com}{Latex-Tables}. Ada juga plugin untuk microsoft excel bernama \href{https://ctan.org/tex-archive/support/excel2latex?lang=en}{CTAN}, namun saya jarang mempergunakannya. Contoh tabel dapat dilihat pada Tabel \ref{tab-contoh} berikut.
-
-\begin{table}[h]
-\caption{Contoh Tabel}
-\label{tab-contoh}
-\centering
-\resizebox{12cm}{!}{%
-\begin{tabular}{ccccccccc}
-\hline
-\multirow{2}{*}{\textbf{Exp}} & \multirow{2}{*}{\textbf{Mask}} & \multicolumn{3}{c}{\textbf{GT}}            & \multicolumn{3}{c}{\textbf{Proposed}}      & \multirow{2}{*}{\textbf{RMSE}} \\ \cline{3-8}
-                              &                                & \textbf{Avg} & \textbf{Max} & \textbf{Min} & \textbf{Avg} & \textbf{Max} & \textbf{Min} &                                \\ \hline
-\multirow{2}{*}{1}            & Yes                            & 89.60        & 114.84        & 70.31        & 89.14        & 118.45        & 68.24        & 3.66                           \\
-                              & No                             & 90.55        & 112.50        & 75.00        & 89.03        & 109.75        & 71.35        & 3.60                            \\ \hline
-\multirow{2}{*}{2}            & Yes                            & 109.84        & 125.98       & 98.44       & 108.62       & 121.30       & 98.26      & 4.04                           \\ 
-                              & No                             & 106.62       & 123.44        & 96.09       & 106.48       & 122.19       & 93.37        & 3.95                           \\ \hline
-3                             & Yes                            & 74.42        & 94.92       & 62.99        & 73.49       & 102.32        & 60.43       & 3.27                         \\ \hline
-Mean                          &                                & 90.61         & 114.34        & 80.57        & 89.70       & 114.80       & 78.33        & 3.63                           \\ \hline
-\end{tabular}
-}
-\end{table}
-
-% \section{Referensi dan Daftar Pustaka}
-% Ini bagian yang sedikit \textit{tricky}. Anda harus memasukkan daftar pustaka anda ke sebuah file berekstensi .bib di bagian kiri dari overleaf ini. Konten dot bib ini dapat anda export dengan mudah, entah itu dari google scholar, mendeley, ataupun manajemen sitasi lainnya.\\\\
-% Cara penggunaanya pun cukup mudah. Misalnya saat ini saya ingin mensitasi salah satu dokumen yang ada, misalnya wikipedia, saya cukup menuliskan $\backslash${\tt{cite}} yang berisikan cite-key dari entri yang ada di file.bib \cite{Wikipedia_contributors2021-bb}. Contoh lain menuliskan sitasi adalah sebagai berikut \cite{Name2018-hd}.
-
-% \newpage
-% \bibliographystyle{IEEEtran}
-% \bibliography{Referensi}
 \end{document}
