@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1764263622.36426 "d:/Abckup_desktop/Semester7/imtek_hmif_sop/main.tex" "main.pdf" "main" 1764263624.51592 0
+["pdflatex"] 1764264643.15273 "d:/Abckup_desktop/Semester7/imtek_hmif_sop/main.tex" "main.pdf" "main" 1764264645.22243 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136765053 520 4889cce2180234b97cad636b6039c722 ""
   "C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -223,10 +223,10 @@
   "C:/Users/ASUS/AppData/Roaming/MiKTeX/tex/latex/upquote/upquote.sty" 1335534756 1088 517e01cde97c1c0baf72e69d43aa5a2e ""
   "Figure/HMIF.png" 1764257750 243039 94bb05ab43ee86aaf12aee12b49c91ca ""
   "Figure/ITERA.png" 1764257750 587727 025da3d62236850542147de2074059b1 ""
-  "Figure/ttd_kevin.png" 1709099973 23010 1f335593bc7f1739c37c102ac7dac7ae ""
+  "Figure/ttd_kevin.png" 1764264641 1328 60406103dda5c4365143783e2d150008 ""
   "d:/Abckup_desktop/Semester7/imtek_hmif_sop/main.tex" 1764263621 10357 7d27375a2d03ebd2ac48e92895dfd5ca ""
-  "main.aux" 1764263624 627 708b284cf6312bd02c0edd4c3a769a9f "pdflatex"
-  "main.out" 1764263624 316 68ee648bb5ed412360cc7b6e3adca254 "pdflatex"
+  "main.aux" 1764264644 627 708b284cf6312bd02c0edd4c3a769a9f "pdflatex"
+  "main.out" 1764264644 316 68ee648bb5ed412360cc7b6e3adca254 "pdflatex"
   "main.tex" 1764263621 10357 7d27375a2d03ebd2ac48e92895dfd5ca ""
   (generated)
   "main.aux"

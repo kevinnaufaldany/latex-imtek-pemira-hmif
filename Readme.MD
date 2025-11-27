@@ -1,6 +1,6 @@
 # LaTeX Template Manual Book Imtek Pemira HMIF
 
-Versi Overleaf dapat dilihat pada tautan [Overleaf](https://www.overleaf.com/9362565282bdynfqvpbspj#e9573b)
+Versi Overleaf dapat dilihat pada tautan [Overleaf](https://www.overleaf.com/6554699863yznmykkhppsm#b02c71)
 
 Dibuat untuk dipergunakan oleh Pemira HMIF 2025.
 
