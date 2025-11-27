@@ -1,7 +1,8 @@
 \documentclass[11pt,a4paper]{article}
 %%%%%%%%%%%%%%%%%%%%%%%%% Credit %%%%%%%%%%%%%%%%%%%%%%%%
 
-% template ini dibuat oleh martin.manullang@if.itera.ac.id untuk dipergunakan oleh seluruh sivitas akademik itera.
+% template ini dibuat oleh kevin.122140222@student.itera.ac.id untuk dipergunakan oleh dipergunakan oleh Pemilu HMIF 2025.
+% Template dibuat berdasarkan template LaTeX Template IF ITERA oleh Sivitas Akademik ITERA, khususnya Program Studi Teknik Informatika ITERA.
 
 %%%%%%%%%%%%%%%%%%%%%%%%% PACKAGE starts HERE %%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
@@ -120,8 +121,15 @@
 \noindent\rule{\textwidth}{0.4pt}
 }}
 
+% untuk ganti nama dokumen
+\newcommand{\dokumen}{GUIDE BOOK PEMILIHAN}
+\newcommand{\dokumenkecil}{Guide Book Pemilihan}
+\newcommand{\pemilu}{PEMILU }
+\newcommand{\pemilukecil}{Pemilu }
+
+
 % \fancyfoot[L]{\textbf{Manual Book}}
-\fancyfoot[L]{\textbf{Manual Book by Imtek Pemira HMIF 2025 \hfill \thepage}}
+\fancyfoot[L]{\textbf{\dokumenkecil by Imtek \pemilukecil HMIF 2025 \hfill \thepage}}
 
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -160,7 +168,7 @@
 % ===== COVER PAGE =====
 \begin{center}
     \vspace*{-1cm}
-    {\Huge \textbf{MANUAL BOOK}} \\[2cm]
+    {\Huge \textbf{\dokumen}} \\[2cm]
     
     % Logo HMIF di tengah
     \includegraphics[width=10cm]{Figure/HMIF.png} \\[2cm]
@@ -168,7 +176,7 @@
     {\Large Disusun oleh:} \\[0.5cm]
     {\LARGE \textbf{DIVISI IMTEK}} \\[1.5cm]
     
-    {\LARGE \textbf{PEMIRA HMIF}} \\[0.5cm]
+    {\LARGE \textbf{\pemilu HMIF}} \\[0.5cm]
     {\LARGE \textbf{2025}}
 \end{center}
 
@@ -198,7 +206,8 @@
      Untuk menggunakan subheader, anda cukup membuat $\backslash${\tt{subsection}} atau bahkan  $\backslash${\tt{subsubsection}} untuk sub-sub bab. Lalu bagaimana untuk membuat subheader atau bahkan header namun tanpa penomoran? Cek keterangan di bawah ini.
 
 \subsection*{Header Tanpa Penomoran}
-     Untuk menggunakan subheader tanpa penomoran, anda cukup membuat $\backslash${\tt{subsection*}} atau bahkan  $\backslash${\tt{subsubsection*}} maupun $\backslash${\tt{section*}}.
+     Untuk menggunakan subheader tanpa penomoran, anda cukup membuat $\backslash${\tt{subsection*}} atau bahkan \\
+     $\backslash${\tt{subsubsection*}} maupun $\backslash${\tt{section*}}.
     
 \subsection{Bold, Italic, Plaintext}
 \begin{itemize}
@@ -206,19 +215,6 @@
     \item Anda dapat membuat cetak miring dengan perintah $\backslash${\tt{textit}} seperti \textit{berikut ini}. \item Untuk menggaris bawahi, tinggal ketikkan perintah $\backslash${\tt{underline}} seperti \underline{berikut ini}.
     \item Untuk membuat list seperti tulisan ini, gunakan perintah $\backslash${\tt{item}} diantara
 \end{itemize}
-
-\subsection{Code Snippets}
-    Berikut ini adalah contoh dari penggunaan $\backslash${\tt{begin{lstlisting}}} untuk menulis potongan kode. Dalam kasus ini saya menggunakan bahasa Python. Jika anda menggunakan C atau yang lainnya, tinggal sesuaikan di bagian parameter dari $\backslash${\tt{begin{lstlisting}}}. Anda dapat melihatnya pada code snipptes \ref{labelkode}
-    
-    \begin{lstlisting}[language=Python, caption=Captionnya tulis di sini class,label={labelkode}]
-    class SynthiaDataset(Dataset):
-
-    CLASSES = [
-        "void", "road", "sidewalk", "building", "wall", "fence", "pole", "traffic light", 
-        "traffic sign", "vegetation", "terrain", "sky", "person", "rider", "car", "truck", 
-        "bus", "train", "motorcycle", "bicycle", "road lines", "other", "road works"
-    ]
-    \end{lstlisting}
 
 \section{Memuat Multi-Gambar}
 Berikut ini adalah contoh cara untuk memuat multi-gambar.
@@ -277,11 +273,4 @@ Mean                          &                                & 90.61         &
 }
 \end{table}
 
-% \section{Referensi dan Daftar Pustaka}
-% Ini bagian yang sedikit \textit{tricky}. Anda harus memasukkan daftar pustaka anda ke sebuah file berekstensi .bib di bagian kiri dari overleaf ini. Konten dot bib ini dapat anda export dengan mudah, entah itu dari google scholar, mendeley, ataupun manajemen sitasi lainnya.\\\\
-% Cara penggunaanya pun cukup mudah. Misalnya saat ini saya ingin mensitasi salah satu dokumen yang ada, misalnya wikipedia, saya cukup menuliskan $\backslash${\tt{cite}} yang berisikan cite-key dari entri yang ada di file.bib \cite{Wikipedia_contributors2021-bb}. Contoh lain menuliskan sitasi adalah sebagai berikut \cite{Name2018-hd}.
-
-% \newpage
-% \bibliographystyle{IEEEtran}
-% \bibliography{Referensi}
 \end{document}

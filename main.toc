@@ -2,7 +2,6 @@
 \contentsline {section}{\numberline {2}Cara Mencantumkan Link}{1}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Sub Header atau Sub Chapter}{1}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Bold, Italic, Plaintext}{1}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Code Snippets}{1}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Memuat Multi-Gambar}{2}{section.3}%
-\contentsline {section}{\numberline {4}Memuat Gambar}{3}{section.4}%
-\contentsline {section}{\numberline {5}Memuat Tabel}{3}{section.5}%
+\contentsline {section}{\numberline {3}Memuat Multi-Gambar}{1}{section.3}%
+\contentsline {section}{\numberline {4}Memuat Gambar}{2}{section.4}%
+\contentsline {section}{\numberline {5}Memuat Tabel}{2}{section.5}%
