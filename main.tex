@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 %%%%%%%%%%%%%%%%%%%%%%%%% Credit %%%%%%%%%%%%%%%%%%%%%%%%
 
 % template ini dibuat oleh kevin.122140222@student.itera.ac.id untuk dipergunakan oleh dipergunakan oleh Pemilu HMIF 2025.
@@ -77,12 +77,10 @@
 % Command Pasal otomatis dengan argumen judul
 \newcommand{\pasal}[1]{%
     \stepcounter{pasal}%
-    \addcontentsline{toc}{section}{Pasal \thepasal}
+    \addcontentsline{toc}{section}{#1}
     \vspace{0.5em}
     \begin{center}
-    \Large \textbf{Pasal \thepasal}\\
-    \vspace{0.2em}
-    \textbf{#1}
+    \Large \textbf{#1}
     \end{center}
     \vspace{0.2em}
 }

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1764264643.15273 "d:/Abckup_desktop/Semester7/imtek_hmif_sop/main.tex" "main.pdf" "main" 1764264645.22243 0
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+["pdflatex"] 1764680171.83454 "d:/Abckup_desktop/Semester7/imtek_hmif_sop/main.tex" "main.pdf" "main" 1764680173.80021 0
+  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136765053 520 4889cce2180234b97cad636b6039c722 ""
   "C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Program Files/MiKTeX/tex/generic/babel/babel.sty" 1754220793 146665 9149bce97203d4030d7cbe4f4e85dfc4 ""
@@ -75,7 +75,7 @@
   "C:/Program Files/MiKTeX/tex/latex/base/article.cls" 1749467999 20144 b966087dda3b194755eb460d32e2ef75 ""
   "C:/Program Files/MiKTeX/tex/latex/base/fontenc.sty" 1749467999 5275 2f50a1b91fdc3c2c6ff41843a6854061 ""
   "C:/Program Files/MiKTeX/tex/latex/base/ifthen.sty" 1749467999 5525 1593ca62a2554dd7423fc8a4e5a82125 ""
-  "C:/Program Files/MiKTeX/tex/latex/base/size11.clo" 1749467999 8464 f339f4d5391fbe0425b2d94c90e6819e ""
+  "C:/Program Files/MiKTeX/tex/latex/base/size12.clo" 1749467999 8449 8dc66c6c313c8eb2d774af83bca435dd ""
   "C:/Program Files/MiKTeX/tex/latex/base/textcomp.sty" 1749467999 2846 e26604d3d895e65d874c07f30c291f3f ""
   "C:/Program Files/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Program Files/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1739279216 46850 d87daedc2abdc653769a6f1067849fe0 ""
@@ -224,10 +224,10 @@
   "Figure/HMIF.png" 1764257750 243039 94bb05ab43ee86aaf12aee12b49c91ca ""
   "Figure/ITERA.png" 1764257750 587727 025da3d62236850542147de2074059b1 ""
   "Figure/ttd_kevin.png" 1764264641 1328 60406103dda5c4365143783e2d150008 ""
-  "d:/Abckup_desktop/Semester7/imtek_hmif_sop/main.tex" 1764263621 10357 7d27375a2d03ebd2ac48e92895dfd5ca ""
-  "main.aux" 1764264644 627 708b284cf6312bd02c0edd4c3a769a9f "pdflatex"
-  "main.out" 1764264644 316 68ee648bb5ed412360cc7b6e3adca254 "pdflatex"
-  "main.tex" 1764263621 10357 7d27375a2d03ebd2ac48e92895dfd5ca ""
+  "d:/Abckup_desktop/Semester7/imtek_hmif_sop/main.tex" 1764680169 10294 5ab91b9f14e59fe8d216d8e1fd46f352 ""
+  "main.aux" 1764680173 637 1f520f079c200200f21fb5a7a67cfe55 "pdflatex"
+  "main.out" 1764680173 363 72b325b1f9442be02149dc701ee8cd1b "pdflatex"
+  "main.tex" 1764680169 10294 5ab91b9f14e59fe8d216d8e1fd46f352 ""
   (generated)
   "main.aux"
   "main.log"
