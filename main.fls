@@ -1,13 +1,13 @@
-PWD d:\Abckup_desktop\Semester7\imtek_hmif
+PWD d:\Abckup_desktop\Semester7\imtek_guide_book
 INPUT C:\Users\ASUS\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Abckup_desktop\Semester7\imtek_hmif\main.tex
+INPUT d:\Abckup_desktop\Semester7\imtek_guide_book\main.tex
 OUTPUT main.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size12.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size12.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size12.clo
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
@@ -34,6 +34,8 @@ INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\placeins\placeins.sty
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\placeins\placeins.sty
+INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\generic\xypic\xy.sty
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\generic\xypic\xy.sty
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\generic\xypic\xy.tex
@@ -306,6 +308,8 @@ INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\lipsum\lipsum.sty
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\lipsum\lipsum.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
@@ -422,33 +426,25 @@ INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\libertine\LinLibertin
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-t1--base.tfm
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-t1.vf
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1--base.tfm
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\bera\fvmr8t.tfm
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1.tfm
+INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-t1.tfm
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1.tfm
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-t1.tfm
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ts1.tfm
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-t1.tfm
-INPUT .\Figure\aug1.png
-INPUT .\Figure\aug1.png
-INPUT .\Figure\aug1.png
-INPUT .\Figure\aug1.png
-INPUT .\Figure\aug1.png
-INPUT .\Figure\aug1.png
-INPUT .\Figure\aug1.png
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1.tfm
-INPUT .\Figure\aug2.png
-INPUT .\Figure\aug2.png
-INPUT .\Figure\aug2.png
-INPUT .\Figure\aug2.png
-INPUT .\Figure\aug2.png
-INPUT .\Figure\aug2.png
-INPUT .\Figure\aug2.png
+INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-t1.tfm
+INPUT .\Figure\6. Berhasil Login.jpeg
+INPUT .\Figure\6. Berhasil Login.jpeg
+INPUT .\Figure\6. Berhasil Login.jpeg
+INPUT .\Figure\6. Berhasil Login.jpeg
+INPUT .\Figure\6. Berhasil Login.jpeg
+INPUT .\Figure\6. Berhasil Login.jpeg
+INPUT .\Figure\6. Berhasil Login.jpeg
 INPUT .\Figure\ITERA.png
 INPUT .\Figure\ITERA.png
 INPUT .\Figure\ITERA.png
@@ -467,26 +463,111 @@ INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLiberti
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\libertine\LinLibertineTI-tlf-t1.vf
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-t1--base.tfm
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\enc\dvips\libertine\lbtn_7grukw.enc
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\enc\dvips\libertinust1math\libusMR.enc
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\bera\fvmr8t.vf
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\bera\fvmr8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\base\8r.enc
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-t1.vf
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1--base.tfm
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-ts1.vf
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ts1--base.tfm
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\enc\dvips\libertine\lbtn_naooyc.enc
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\libertine\LinLibertineTI-tlf-t1.vf
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-t1--base.tfm
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-t1.vf
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1--base.tfm
-INPUT .\Figure\ioutrain.png
-INPUT .\Figure\ioutrain.png
-INPUT .\Figure\ioutrain.png
-INPUT .\Figure\ioutrain.png
-INPUT .\Figure\ioutrain.png
-INPUT .\Figure\ioutrain.png
-INPUT .\Figure\ioutrain.png
+INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\vf\public\libertine\LinLibertineTB-tlf-t1.vf
+INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-t1--base.tfm
+INPUT .\Figure\7. Lihat visi misi calon kahim.jpeg
+INPUT .\Figure\7. Lihat visi misi calon kahim.jpeg
+INPUT .\Figure\7. Lihat visi misi calon kahim.jpeg
+INPUT .\Figure\7. Lihat visi misi calon kahim.jpeg
+INPUT .\Figure\7. Lihat visi misi calon kahim.jpeg
+INPUT .\Figure\7. Lihat visi misi calon kahim.jpeg
+INPUT .\Figure\7. Lihat visi misi calon kahim.jpeg
+INPUT .\Figure\8. Visi misi calon kahim.jpeg
+INPUT .\Figure\8. Visi misi calon kahim.jpeg
+INPUT .\Figure\8. Visi misi calon kahim.jpeg
+INPUT .\Figure\8. Visi misi calon kahim.jpeg
+INPUT .\Figure\8. Visi misi calon kahim.jpeg
+INPUT .\Figure\8. Visi misi calon kahim.jpeg
+INPUT .\Figure\8. Visi misi calon kahim.jpeg
+INPUT .\Figure\12. Refresh.jpeg
+INPUT .\Figure\12. Refresh.jpeg
+INPUT .\Figure\12. Refresh.jpeg
+INPUT .\Figure\12. Refresh.jpeg
+INPUT .\Figure\12. Refresh.jpeg
+INPUT .\Figure\12. Refresh.jpeg
+INPUT .\Figure\12. Refresh.jpeg
+INPUT .\Figure\13. sUDAH tERVALIDASI oLEH PANITIA.jpeg
+INPUT .\Figure\13. sUDAH tERVALIDASI oLEH PANITIA.jpeg
+INPUT .\Figure\13. sUDAH tERVALIDASI oLEH PANITIA.jpeg
+INPUT .\Figure\13. sUDAH tERVALIDASI oLEH PANITIA.jpeg
+INPUT .\Figure\13. sUDAH tERVALIDASI oLEH PANITIA.jpeg
+INPUT .\Figure\13. sUDAH tERVALIDASI oLEH PANITIA.jpeg
+INPUT .\Figure\13. sUDAH tERVALIDASI oLEH PANITIA.jpeg
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\14. Pilih kahim.jpeg
+INPUT .\Figure\14. Pilih kahim.jpeg
+INPUT .\Figure\14. Pilih kahim.jpeg
+INPUT .\Figure\14. Pilih kahim.jpeg
+INPUT .\Figure\14. Pilih kahim.jpeg
+INPUT .\Figure\14. Pilih kahim.jpeg
+INPUT .\Figure\14. Pilih kahim.jpeg
+INPUT .\Figure\20. Klik Simpan kedua pilihan.jpeg
+INPUT .\Figure\20. Klik Simpan kedua pilihan.jpeg
+INPUT .\Figure\20. Klik Simpan kedua pilihan.jpeg
+INPUT .\Figure\20. Klik Simpan kedua pilihan.jpeg
+INPUT .\Figure\20. Klik Simpan kedua pilihan.jpeg
+INPUT .\Figure\20. Klik Simpan kedua pilihan.jpeg
+INPUT .\Figure\20. Klik Simpan kedua pilihan.jpeg
+INPUT .\Figure\21. Konfirmasi pilihan.jpeg
+INPUT .\Figure\21. Konfirmasi pilihan.jpeg
+INPUT .\Figure\21. Konfirmasi pilihan.jpeg
+INPUT .\Figure\21. Konfirmasi pilihan.jpeg
+INPUT .\Figure\21. Konfirmasi pilihan.jpeg
+INPUT .\Figure\21. Konfirmasi pilihan.jpeg
+INPUT .\Figure\21. Konfirmasi pilihan.jpeg
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\22. Berhasil Memilih.jpeg
+INPUT .\Figure\22. Berhasil Memilih.jpeg
+INPUT .\Figure\22. Berhasil Memilih.jpeg
+INPUT .\Figure\22. Berhasil Memilih.jpeg
+INPUT .\Figure\22. Berhasil Memilih.jpeg
+INPUT .\Figure\22. Berhasil Memilih.jpeg
+INPUT .\Figure\22. Berhasil Memilih.jpeg
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\ITERA.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\HMIF.png
+INPUT .\Figure\logout.jpeg
+INPUT .\Figure\logout.jpeg
+INPUT .\Figure\logout.jpeg
+INPUT .\Figure\logout.jpeg
+INPUT .\Figure\logout.jpeg
+INPUT .\Figure\logout.jpeg
+INPUT .\Figure\logout.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
+INPUT .\Figure\2.Tampilan Awal.jpeg
 INPUT .\Figure\ITERA.png
 INPUT .\Figure\ITERA.png
 INPUT .\Figure\ITERA.png
@@ -498,13 +579,9 @@ INPUT .\Figure\HMIF.png
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\public\libertinust1math\LibertinusT1Math.pfb
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\public\libertinust1math\LibertinusT1Math.pfb
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\public\libertine\LinLibertineT.pfb
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\public\libertine\LinLibertineT.pfb
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\public\libertine\LinLibertineTB.pfb
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\public\libertine\LinLibertineTB.pfb
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\public\libertine\LinLibertineTI.pfb
 INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\public\libertine\LinLibertineTI.pfb
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\bera\fvmr8a.pfb
-INPUT C:\Users\ASUS\AppData\Roaming\MiKTeX\fonts\type1\bera\fvmr8a.pfb

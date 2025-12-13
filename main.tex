@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 %%%%%%%%%%%%%%%%%%%%%%%%% Credit %%%%%%%%%%%%%%%%%%%%%%%%
 
 % template ini dibuat oleh kevin.122140222@student.itera.ac.id untuk dipergunakan oleh dipergunakan oleh Pemilu HMIF 2025.
@@ -15,6 +15,7 @@
 % \usepackage{amssymb}
 % \usepackage{amsthm}
 \usepackage{placeins}
+\usepackage{float}
 % \usepackage{amsfonts}
 \usepackage{graphicx}
 \usepackage[all]{xy}
@@ -42,7 +43,8 @@
 \usepackage[scaled]{beramono}
 % Enable inserting code into the document
 \usepackage{listings}
-\usepackage{xcolor} 
+\usepackage{xcolor}
+\usepackage{enumitem} % for custom enumerate/itemize formatting 
 % custom color & style for listing
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -100,10 +102,10 @@
 \fancyhead[C]{
 \parbox{\textwidth}{
 \centering
-\begin{tabular}{m{2.2cm} m{10.8cm} m{2.7cm}}
-\includegraphics[width=2.2cm]{Figure/ITERA.png} &
+\begin{tabular}{m{1.7cm} m{11.8cm} m{2.2cm}}
+\includegraphics[width=1.7cm]{Figure/ITERA.png} &
 
-\parbox[c]{10.8cm}{
+\parbox[c]{11.8cm}{
     \centering
     {\large \textbf{HIMPUNAN MAHASISWA INFORMATIKA (HMIF)}}\\
     {\large \textbf{FAKULTAS TEKNOLOGI INDUSTRI}}\\
@@ -113,7 +115,7 @@
 }
 &
 
-\includegraphics[width=2.7cm]{Figure/HMIF.png}
+\includegraphics[width=2.2cm]{Figure/HMIF.png}
 \end{tabular}
 
 % garis bawah header
@@ -122,14 +124,15 @@
 }}
 
 % untuk ganti nama dokumen
-\newcommand{\dokumen}{GUIDE BOOK PEMILIHAN}
-\newcommand{\dokumenkecil}{Guide Book Pemilihan}
+\newcommand{\dokumen}{GUIDE BOOK \\[0.5cm] PEMILIHAN}
+\newcommand{\dokumenkecil}{Guide Book Pemilihan }
 \newcommand{\pemilu}{PEMILU }
 \newcommand{\pemilukecil}{Pemilu }
+\newcommand{\tahun}{HMIF ITERA 2025}
 
 
 % \fancyfoot[L]{\textbf{Manual Book}}
-\fancyfoot[L]{\textbf{\dokumenkecil by Imtek \pemilukecil HMIF 2025 \hfill \thepage}}
+\fancyfoot[L]{\textbf{\dokumenkecil \pemilu \tahun \hfill \thepage}}
 
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -195,82 +198,163 @@
 \pagenumbering{arabic}
 \pagestyle{fancy}
 
-\section{Header Pertama}
-    Untuk menggunakan header, anda cukup membuat $\backslash${\tt{section}} pada bagian script anda. Penomoran pada header akan otomatis dibuat. Jika anda membutuhkan line break, anda dapat membubuhkan dua garis miring dengan backslash seperti berikut $\backslash\backslash$
+\section{Persiapan}
+    Persiapan yang diperlukan berupa:
+    \begin{enumerate}[label=\arabic*., labelindent=0.75cm, leftmargin=!, itemindent=0pt]
+        \item Device Handphone 
+        \item Internet 
+        \item Browser dengan \textit{e-mail} ITERA
+        \item KTM / e-KTM 
+    \end{enumerate}
 
-\section{Cara Mencantumkan Link}
-    Anda dapat memulai belajar menulis di \LaTeX dengan menulis tugas atau laporan yang sesungguhnya. Pada awalnya mungkin terasa sulit. Namun jika anda dengan tekun tetap berlatih, justru menulis di LaTeX akan membuat anda terbiasa dan malah lebih menyenangkan ketimbang menulis di Microsoft Word.\\
-    Jika anda ingin mencantumkan link di \LaTeX anda dapat melakukannya dengan perintah $\backslash${\tt{href}}, misalnya pada tautan berikut ini \href{http://aldi_tob_2000.staff.gunadarma.ac.id/Downloads/files/17359/Membuat+dokumen+dengan+latex.pdf}{(Sumber: PDF Tutorial Belajar Latex)}.
-    
-\subsection{Sub Header atau Sub Chapter}
-     Untuk menggunakan subheader, anda cukup membuat $\backslash${\tt{subsection}} atau bahkan  $\backslash${\tt{subsubsection}} untuk sub-sub bab. Lalu bagaimana untuk membuat subheader atau bahkan header namun tanpa penomoran? Cek keterangan di bawah ini.
+\subsection{Masuk ke Website}
+Silahkan masuk ke website dengan cara scan barcode yang di siapkan oleh panitia, atau dapat di akses pada url berikut \href{https://pemilu-hmif-voting.vercel.app/}{https://pemilu-hmif-voting.vercel.app/}
 
-\subsection*{Header Tanpa Penomoran}
-     Untuk menggunakan subheader tanpa penomoran, anda cukup membuat $\backslash${\tt{subsection*}} atau bahkan \\
-     $\backslash${\tt{subsubsection*}} maupun $\backslash${\tt{section*}}.
-    
-\subsection{Bold, Italic, Plaintext}
-\begin{itemize}
-    \item Anda dapat membuat cetak tebal dengan perintah $\backslash${\tt{textbf}} seperti \textbf{berikut ini}.
-    \item Anda dapat membuat cetak miring dengan perintah $\backslash${\tt{textit}} seperti \textit{berikut ini}. \item Untuk menggaris bawahi, tinggal ketikkan perintah $\backslash${\tt{underline}} seperti \underline{berikut ini}.
-    \item Untuk membuat list seperti tulisan ini, gunakan perintah $\backslash${\tt{item}} diantara
-\end{itemize}
-
-\section{Memuat Multi-Gambar}
-Berikut ini adalah contoh cara untuk memuat multi-gambar.
+\subsection{Login}
+Silahkan melakukan \textbf{Login} menggunakan akun \textit{e-mail} ITERA
 
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\def\svgwidth{\columnwidth}
-		\includegraphics[width=1\textwidth]{Figure/aug1.png}
-		\caption{Augment Result 1}
-		\label{fig:aug-1}
+		\includegraphics[width=1\textwidth]{Figure/2.Tampilan Awal.jpeg}
+		\caption{Click \textbf{Masuk dengan akun ITERA}}
+		\label{fig:tampilan-awal}
 	\end{subfigure}
 	\qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
 	%(or a blank line to force the subfigure onto a new line)
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\def\svgwidth{\columnwidth}
-		\includegraphics[width=1\textwidth]{Figure/aug2.png}
-		\caption{Augment Result 2}
-		\label{fig:aug-2}
+		\includegraphics[width=1\textwidth]{Figure/6. Berhasil Login.jpeg}
+		\caption{Tampilan Awal Setelah \textbf{Login}}
+		\label{fig:berhasil-login}
 	\end{subfigure}
-	\caption{Augmentation Samples}\label{fig:aug}
+	\caption{Masuk ke Website dan Login}\label{fig:masuk-website}
 \end{figure}
 
+Pastikan status pada sistem masih menunjukkan \textbf{Belum Tervalidasi}. Sebelum memasuki ruangan pemilihan, pastikan Anda membawa dan menyiapkan KTM 
+(\textit{e-KTM}). 
+
+\subsection{Baca Visi dan Misi}
+Baca visi dan misi dari setiap kandidat yang tersedia sebelum melakukan pemilihan
+
+\begin{figure}[h]
+	\centering
+	% Baris pertama: dua gambar sejajar
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{Figure/7. Lihat visi misi calon kahim.jpeg}
+		\caption{Click \textbf{Lihat Visi \& Misi}}
+		\label{fig:lihat-visimisi}
+	\end{subfigure}
+	\hspace{0.5cm}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{Figure/8. Visi misi calon kahim.jpeg}
+		\caption{Bisa di baca isi dari visi \& misi kandidat}
+		\label{fig:isi-visimisi2}
+	\end{subfigure}
+
+	\caption{Baca Visi \& Misi}
+	\label{fig:baca-visimisi}
+\end{figure}
+
+\section{Validasi}
+Sebelum melanjutkan proses validasi, pastikan kembali bahwa KTM (\textit{e-KTM}) telah disiapkan. Lakukan proses \textbf{validasi} kepada petugas validator yang berada pada kursi yang telah ditentukan. Ikuti seluruh instruksi proses \textbf{validasi} yang disampaikan oleh petugas validator. Jika sudah, Lakukan refresh halaman hingga status berubah menjadi \textbf{Tervalidasi}.
+
+\begin{figure}[H]
+	\centering
+	% Baris pertama: dua gambar sejajar
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{Figure/12. Refresh.jpeg}
+		\caption{Click \textbf{Refresh}}
+		\label{fig:refresh}
+	\end{subfigure}
+	\hspace{0.5cm}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{Figure/13. sUDAH tERVALIDASI oLEH PANITIA.jpeg}
+		\caption{Status \textbf{Tervalidasi}}
+		\label{fig:status-tervalidasi}
+	\end{subfigure}
+
+	\caption{Validasi}
+	\label{fig:validasi}
+\end{figure}
+
+Setelah proses validasi dinyatakan berhasil, Anda dapat melanjutkan ke tahap pemilihan. \\ 
+\textbf{Catatan:} Pemilihan hanya dapat dilakukan pada kursi yang telah disediakan di depan validator.
+
+\section{Pemilihan}
+Setelah status berubah menjadi \textbf{Tervalidasi}, Anda dapat melanjutkan ke tahap pemilihan dengan cara menekan tombol \textbf{Pilih} pada setiap kandidat, kemudian pastikan Anda sudah memilih \textbf{Calon Ketua Himpunan} dan \textbf{Calon Senator}.
+\subsection{Proses Pemilihan}
+
+\begin{figure}[H]
+	\centering
+		% Baris pertama: dua gambar sejajar
+		\begin{subfigure}[b]{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Figure/14. Pilih kahim.jpeg}
+			\caption{Click \textbf{Pilih} pada kandidat yang ingin dipilih}
+			\label{fig:3.CitraAwalFlip}
+		\end{subfigure}
+		
+		% Baris kedua: satu gambar di bawah tengah
+		\vskip\baselineskip
+		\begin{subfigure}[b]{0.35\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{Figure/20. Klik Simpan kedua pilihan.jpeg}
+			\caption{Click \textbf{Simpan kedua pilihan} setelah memilih kedua kandidat}
+			\label{fig:3.hasilFlipHorizontal}
+		\end{subfigure}
+		\hspace{0.7cm}
+		\begin{subfigure}[b]{0.35\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{Figure/21. Konfirmasi pilihan.jpeg}
+			\caption{Click \textbf{Ya} pada pilihan konfirmasi untuk menyelesaikan pemilihan}
+			\label{fig:3.hasilFlipVertical}
+		\end{subfigure}
+		\caption{Proses Pemilihan}
+		\label{fig:3.HasilFlipData}
+\end{figure}
+
+\subsection{Sudah Memilih}
+Jikalau sudah memilih, Pastikan status sistem berubah menjadi \textbf{Sudah Memilih}, dan jikalau sudah memilih dan status sudah berubah menjadi \textbf{Sudah Memilih}, lakukan \textbf{validasi} akhir kepada petugas validator sebagai syarat untuk meninggalkan ruangan.
+
+% 22. Berhasil Memilih.jpeg
+\begin{figure}[H] % Kalau menggunakan H, posisi gambar akan tepat dibawah teks
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figure/22. Berhasil Memilih.jpeg}
+    \caption{Contoh Gambar Dataset}
+    \label{fig:3.ContohDataset}
+\end{figure}
 
 \newpage
-\section{Memuat Gambar}
-Jika anda tidak ingin memuat multi-gambar, alias satu caption hanya berisi satu gambar. Silahkan tiru cara berikut. Apabila anda merasa gambar anda tidak sesuai pada tempatnya, pelajari cara penempatan gambar pada \href{https://www.overleaf.com/learn/latex/Positioning_of_Figures}{tautan berikut ini}.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Figure/ioutrain.png}
-    \caption{Ini Captionnya}
-    \label{fig:my_label}
+\section{Log out}
+Setelah proses pemilihan dan validasi akhir selesai, silahkan click icon pintu di pojok kanan bawah berwarna merah untuk melakukan \textbf{Log out}.
+
+\begin{figure}[H]
+	\centering
+	% Baris pertama: dua gambar sejajar
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{Figure/logout.jpeg}
+		\caption{Click icon \textbf{pintu} untuk log out}
+		\label{fig:logout-icon}
+	\end{subfigure}
+	\hspace{0.5cm}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{Figure/2.Tampilan Awal.jpeg}
+		\caption{Balik ke tampilan awal setelah log out}
+		\label{fig:balik-tampilan-awal}
+	\end{subfigure}
+
+	\caption{Log out}
+	\label{fig:logout}
 \end{figure}
-
-\section{Memuat Tabel}
-Bagian ini adalah bagian yang menurut saya cukup sulit. Namun anda dapat menggunakan bantuan dari table designer yang ada di internet, misalnya \href{https://www.tablesgenerator.com}{TablesGenerator} atau \href{https://www.latex-tables.com}{Latex-Tables}. Ada juga plugin untuk microsoft excel bernama \href{https://ctan.org/tex-archive/support/excel2latex?lang=en}{CTAN}, namun saya jarang mempergunakannya. Contoh tabel dapat dilihat pada Tabel \ref{tab-contoh} berikut.
-
-\begin{table}[h]
-\caption{Contoh Tabel}
-\label{tab-contoh}
-\centering
-\resizebox{12cm}{!}{%
-\begin{tabular}{ccccccccc}
-\hline
-\multirow{2}{*}{\textbf{Exp}} & \multirow{2}{*}{\textbf{Mask}} & \multicolumn{3}{c}{\textbf{GT}}            & \multicolumn{3}{c}{\textbf{Proposed}}      & \multirow{2}{*}{\textbf{RMSE}} \\ \cline{3-8}
-                              &                                & \textbf{Avg} & \textbf{Max} & \textbf{Min} & \textbf{Avg} & \textbf{Max} & \textbf{Min} &                                \\ \hline
-\multirow{2}{*}{1}            & Yes                            & 89.60        & 114.84        & 70.31        & 89.14        & 118.45        & 68.24        & 3.66                           \\
-                              & No                             & 90.55        & 112.50        & 75.00        & 89.03        & 109.75        & 71.35        & 3.60                            \\ \hline
-\multirow{2}{*}{2}            & Yes                            & 109.84        & 125.98       & 98.44       & 108.62       & 121.30       & 98.26      & 4.04                           \\ 
-                              & No                             & 106.62       & 123.44        & 96.09       & 106.48       & 122.19       & 93.37        & 3.95                           \\ \hline
-3                             & Yes                            & 74.42        & 94.92       & 62.99        & 73.49       & 102.32        & 60.43       & 3.27                         \\ \hline
-Mean                          &                                & 90.61         & 114.34        & 80.57        & 89.70       & 114.80       & 78.33        & 3.63                           \\ \hline
-\end{tabular}
-}
-\end{table}
 
 \end{document}
